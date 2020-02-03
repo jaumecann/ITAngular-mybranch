@@ -1,20 +1,23 @@
 @import '../../../../assets/colors';
-
-span{
-padding: 2%;
+span {
+    padding: 2%;
 }
 
 .btn-outline-pink {
-  color: $pink;
-  border-color: $pink;
-  &:hover {
-      color: $white;
-      background-color: $pink;
-  }
+    color: $pink;
+    border-color: $pink;
+    &:hover {
+        color: $white;
+        background-color: $pink;
+    }
 }
 
-.btn-outline-primary{
-  color: $white;
-  background-color: $pink;
-  border: $pink;
+.btn-outline-primary {
+    color: $white;
+    background-color: $pink;
+    border: $pink;
+}
+
+.progress-bar {
+    background-color: $pink;
 }
