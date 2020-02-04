@@ -3,6 +3,11 @@ span {
     padding: 2%;
 }
 
+body {
+    overflow: hidden;
+    width: 100%;
+}
+
 .btn-outline-pink {
     color: $pink;
     border-color: $pink;

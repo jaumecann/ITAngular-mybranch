@@ -36,11 +36,6 @@ export class FileStudentComponent implements OnInit {
       }
     }
     console.log(this.student);
-    // console.log("Hoy es: " + new Date());
-    // console.log(this.student);
-    // let difference = (new Date(this.student.limitDate).valueOf()) - (new Date(this.student.startDate).valueOf());
-    // console.log(difference / (1000 * 3600 * 24));
-    // this.remainingPercentage(this.student);
   };
 
   changeItinerary(value: any) {
@@ -51,7 +46,7 @@ export class FileStudentComponent implements OnInit {
   remainingPercentage(student): number {
     let date1 = (new Date(this.today).valueOf()) - (new Date(this.student.startDate).valueOf());
     let date2 = (new Date(this.student.limitDate).valueOf()) - (new Date(this.student.startDate).valueOf());
-    let percentage = Math.round((date1 / date2)*100);
+    let percentage = Math.round((date1 / date2) * 100);
     console.log(percentage);
     return percentage;
 
@@ -63,15 +58,3 @@ export class FileStudentComponent implements OnInit {
 
 }
 
-
-// var start = new Date(2015, 0, 1), // Jan 1, 2015
-//     end = new Date(2015, 7, 24), // August 24, 2015
-//     today = new Date(), // April 23, 2015
-//     p = Math.round(((today - start) / (end - start)) * 100) + '%';
-// // Update the progress bar
-// $('.bar').css("width", p).after().append(p);
-
-
-// https://stackoverflow.com/questions/29839270/percentage-between-two-dates-compared-to-today?rq=1
-
-// https://www.geeksforgeeks.org/how-to-calculate-the-number-of-days-between-two-dates-in-javascript/
