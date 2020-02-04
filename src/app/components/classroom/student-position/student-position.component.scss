@@ -10,11 +10,12 @@
     padding-left: 2.5px;
     margin-top: 4.5px;
     margin-left: 2px;
+    position: relative;
 }
 
 .student {
     text-align: center;
-    background-color: $light-grey;
+    background-color: $white /* $light-grey */;
     height: 45px;
     width: 45px;
     border-radius: 100%;
@@ -23,7 +24,7 @@
 }
 
 .front-end {
-    background-color: $pink;
+    /* background-color: $pink; */
 }
 
 .back-end {
@@ -35,5 +36,12 @@
 }
 
 .empty {
-    background-color: #CCCCCC;
+    border: solid 1px #CCCCCC;
+}
+
+.circle-bar {
+position:absolute;
+top:0px;
+left: 0px;
+z-index:4;
 }

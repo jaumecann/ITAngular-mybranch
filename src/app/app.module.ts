@@ -16,6 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 // graficos
 import { ChartsModule } from 'ng2-charts';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 import { ResetPasswordRequestComponent } from './components/login-components/reset-password-request/reset-password-request.component';
 import { RouterModule } from '@angular/router';
@@ -93,7 +94,8 @@ import { ExerciseModalComponent } from './components/global/exercise-modal/exerc
     APP_ROUTING,
     BsDatepickerModule.forRoot(),
     Select2Module,
-    TooltipModule.forRoot()
+    TooltipModule.forRoot(),
+    NgCircleProgressModule.forRoot({radius:20, showBackground:true,})
   ],
   providers: [
     StudentSeatService,
