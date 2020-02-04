@@ -9,7 +9,8 @@ export class StudentSeatService {
             lastname: 'PERALTA',
             itinerary: 'Front End',
             position: 0,
-            gender: 'M'
+            gender: 'M',
+            daysIn: 6,
         },
         {
             name: 'PEDRO',
@@ -435,6 +436,17 @@ export class StudentSeatService {
         return this.students;
     }
 
+    //adding random days (or%) in the course
+
+    addRandomDays(): StudentSeat[] {
+      for (let futureCoder of this.students){
+        futureCoder.daysIn = Math.floor(Math.random() * 100)
+      }
+      return this.students;
+    }
+
+
+
 }
 
 // corregir interface con datos reales
@@ -444,4 +456,7 @@ export interface StudentSeat {
     itinerary: string;
     position: number;
     gender: string;
+    //pruebas J
+    daysIn?: number;
 }
+

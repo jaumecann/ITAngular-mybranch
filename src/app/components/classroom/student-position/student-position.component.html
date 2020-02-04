@@ -7,7 +7,7 @@ ngIf para colores front-end, back-end, net (clases) -->
 
 <div class="student-container">
     <button *ngIf="student.itinerary == 'Front End'" type="button" class="student front-end" [tooltip]="tooltipTemplate" placement="top">
-
+      {{student.daysIn}}
     </button>
     <button *ngIf="student.itinerary == 'Back End'" type="button" class="student back-end" [tooltip]="tooltipTemplate" placement="top">
 

@@ -19,15 +19,13 @@ export class StudentPositionComponent implements OnInit {
 
   ngOnInit() {
         // iniciate service
-      this.students = this._studentSeatService.getStudentSeat();
+     /*  this.students = this._studentSeatService.getStudentSeat(); */
        //console.log(this.students);
 
 
-
-
-
+       // añadir progreso aleatorio
+       this.students = this._studentSeatService.addRandomDays();
   }
-
 
 
 }
