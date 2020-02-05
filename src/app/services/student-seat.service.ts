@@ -439,8 +439,8 @@ export class StudentSeatService {
     //adding random days (or%) in the course
 
     addRandomDays(): StudentSeat[] {
-      for (let futureCoder of this.students){
-        futureCoder.daysIn = Math.floor(Math.random() * 100)
+      for (let each of this.students){
+        each.daysIn = Math.floor(Math.random() * 100)
       }
       return this.students;
     }
