@@ -23,7 +23,7 @@ export class StudentPositionComponent implements OnInit {
        //console.log(this.students);
 
 
-       // añadir progreso aleatorio
+       // añadir progreso aleatorio del alumno
        this.students = this._studentSeatService.addRandomDays();
   }
 

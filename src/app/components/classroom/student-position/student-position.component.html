@@ -30,9 +30,43 @@ ngIf para colores front-end, back-end, net (clases) -->
     </button>
 
     <button *ngIf="student.itinerary == 'Back End'" type="button" class="student back-end" [tooltip]="tooltipTemplate" placement="top">
+      <circle-progress class="circle-bar"
+      [percent]= student.daysIn
+      [outerStrokeWidth]="4"
+      [innerStrokeWidth]="4"
+      [outerStrokeColor]="'#005F87'"
+      [innerStrokeColor]="'#d3ebf5'"
+      [space]="-5"
+      [animation]="true"
+      [animationDuration]="300"
+      [showTitle]="false"
+      [showSubtitle]="false"
+      [showUnits]="false"
+      [backgroundColor]="'#005F87'"
+      [backgroundOpacity]="'0.8'"
+      [backgroundPadding]="'-8'"
+      [backgroundStroke]="'#005F87'"
+    ></circle-progress>
 
     </button>
     <button *ngIf="student.itinerary == '.Net'" type="button" class="student net" [tooltip]="tooltipTemplate" placement="top">
+      <circle-progress class="circle-bar"
+      [percent]= student.daysIn
+      [outerStrokeWidth]="4"
+      [innerStrokeWidth]="4"
+      [outerStrokeColor]="'#212121'"
+      [innerStrokeColor]="'#E8E8E8'"
+      [space]="-5"
+      [animation]="true"
+      [animationDuration]="300"
+      [showTitle]="false"
+      [showSubtitle]="false"
+      [showUnits]="false"
+      [backgroundColor]="'#212121'"
+      [backgroundOpacity]="'0.8'"
+      [backgroundPadding]="'-8'"
+      [backgroundStroke]="'#212121'"
+    ></circle-progress>
 
     </button>
     <button *ngIf="student.itinerary == ''" type="button" class="student empty">
