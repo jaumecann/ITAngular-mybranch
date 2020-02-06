@@ -11,7 +11,7 @@ ngIf para colores front-end, back-end, net (clases) -->
     <button *ngIf="student.itinerary == 'Front End'" type="button" class="student front-end" [tooltip]="tooltipTemplate" placement="top">
 
       <circle-progress class="circle-bar"
-      [percent]= student.daysIn
+      [percent]= student.timeInAcademy
       [outerStrokeWidth]="4"
       [innerStrokeWidth]="4"
       [outerStrokeColor]="'#D50283'"
@@ -31,7 +31,7 @@ ngIf para colores front-end, back-end, net (clases) -->
 
     <button *ngIf="student.itinerary == 'Back End'" type="button" class="student back-end" [tooltip]="tooltipTemplate" placement="top">
       <circle-progress class="circle-bar"
-      [percent]= student.daysIn
+      [percent]= student.timeInAcademy
       [outerStrokeWidth]="4"
       [innerStrokeWidth]="4"
       [outerStrokeColor]="'#005F87'"
@@ -51,7 +51,7 @@ ngIf para colores front-end, back-end, net (clases) -->
     </button>
     <button *ngIf="student.itinerary == '.Net'" type="button" class="student net" [tooltip]="tooltipTemplate" placement="top">
       <circle-progress class="circle-bar"
-      [percent]= student.daysIn
+      [percent]= student.timeInAcademy
       [outerStrokeWidth]="4"
       [innerStrokeWidth]="4"
       [outerStrokeColor]="'#212121'"

@@ -9,8 +9,8 @@ export class StudentSeatService {
             lastname: 'PERALTA',
             itinerary: 'Front End',
             position: 0,
-            gender: 'M',
-            daysIn: 6,
+            gender: 'M'
+
         },
         {
             name: 'PEDRO',
@@ -440,7 +440,7 @@ export class StudentSeatService {
 
     addRandomDays(): StudentSeat[] {
       for (let each of this.students){
-        each.daysIn = Math.floor(Math.random() * 100)
+        each.timeInAcademy = Math.floor(Math.random() * 100)
       }
       return this.students;
     }
@@ -457,6 +457,6 @@ export interface StudentSeat {
     position: number;
     gender: string;
     //pruebas J
-    daysIn?: number;
+    timeInAcademy?: number;
 }
 
